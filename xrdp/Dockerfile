@@ -1,4 +1,4 @@
 FROM danchitnis/xrdp:ubuntu-xfce
 
-RUN apt-get update \
-&& apt-get install -yq firefox
+RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+&& dpkg -i google-chrome-stable_current_amd64.deb
