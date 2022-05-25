@@ -1,4 +1,4 @@
 FROM danchitnis/xrdp:ubuntu-xfce
 
 RUN apt-get update \
-&& apt-get install firefox
+&& apt-get install -yq firefox
