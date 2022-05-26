@@ -9,3 +9,13 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
     container_name: xrdp
+  burp:
+    image: retenet/burpsuite
+    ports:
+      - "8080:8080"
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=:10
+    container_name: burp
+  
